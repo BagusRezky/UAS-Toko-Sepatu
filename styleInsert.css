@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-color: lightseagreen;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  input[type=text], select, textarea {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  .custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 11% 10.5%;
+    cursor: pointer;
+    margin-bottom: 7%;
+  }
+
+  .stambah{
+    margin-top: 2%;
+  }
+
+  input[type=number]{
+    width: 40%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffff;
+    margin: auto;
+    width: 50%;
+    margin-top: 2.5%;
+  }
+
+  .container2{
+    margin: 10%;
+    margin-top: 5%;
+  }
+
+  .col-25 {
+    float: left;
+    width: 20%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 80%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .group{
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    margin-top: 5%;
+  }
+
+  .back a:link, .back a:visited {
+    background-color: rgb(255, 196, 0);
+    border: none;
+    color: white;
+    padding: 15px 41.5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 2%;
+  }
+  .back a:hover,.back a:active {
+    background-color: orange;
+  }
+  
+  .button {
+    background-color: purple;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 2%;
+    border-radius: 2%;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  .modal-container{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 208vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .modal-container.show{
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+  .modal{
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 200px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+
+  .btn-closed{
+    background-color: #47a386;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+

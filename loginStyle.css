@@ -1,0 +1,71 @@
+body{
+    font-family: sans-serif;
+    background-image: url(img/5185208.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+form{
+    /* box-sizing: border-box; */
+    /* border: 2px solid rgba(0, 0, 0, 0.753); */
+    border-radius: 7px;
+    width: 380px;
+    height: 390px;
+    margin-left: 475px;
+    margin-top: 125px;
+}   
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    /* display: inline-block; */
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    outline: none;
+}
+
+button {
+    background-color: rgba(223, 22, 22, 0.733);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+kotak_login{
+    display: flex;
+    justify-content: center;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+  
+.registrasi {
+    width: auto;
+    padding: -40px 18px;
+    /* background-color: #0452aa; */
+}
+  
+.container {
+    padding: 16px;
+    margin-left: 13px;
+    margin-right: 15px;
+    background-color: rgb(red, green, blue)
+    /* width: 320px;
+    height: 400px; */
+}
+  
+/* span.psw {
+    float: right;
+    padding-top: 16px;
+} */
+  
+.registrasi{
+    margin-top: 40px;
+}
+  
